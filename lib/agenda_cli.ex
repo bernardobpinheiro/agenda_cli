@@ -3,6 +3,7 @@ defmodule AgendaCli do
   alias AgendaCli.Store
 
   # Ponto de entrada da aplicação
+  @spec main(any()) :: :ok
   def main(_args) do
     contacts = Store.load()
     IO.puts("Agenda de Contatos - Digite 'help' para ver os comandos")
